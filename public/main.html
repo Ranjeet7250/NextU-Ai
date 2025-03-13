@@ -1,0 +1,214 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   YGPT
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #ffffff;
+        }
+        .bg-custom {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .btn-pink {
+            background-color: #e6007a;
+            color: white;
+        }
+        .btn-pink:hover {
+            background-color: #cc0066;
+        }
+        .input-transparent {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        .input-transparent::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        nav a{
+            text-decoration: none;  
+        }
+        .chat-container {
+            width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .chat-box {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .user, .bot {
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        .user {
+            background: #007bff;
+            color: white;
+            text-align: right;
+            margin-left: auto;
+        }
+        .bot {
+            background: #eee;
+            color: black;
+            text-align: left;
+        }
+        .typing {
+            font-style: italic;
+            color: gray;
+            display: flex;
+            align-items: center;
+        }
+        .dot {
+            width: 6px;
+            height: 6px;
+            margin: 0 2px;
+            background-color: gray;
+            border-radius: 50%;
+            animation: blink 1.2s infinite ease-in-out;
+        }
+        .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 1; }
+        }
+        .input-container {
+            display: flex;
+            gap: 5px;
+        }
+        input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+  </style>
+ </head>
+ <body class="d-flex flex-column min-vh-100 " style=" background-image: url('img/BG\ P03.png'); background-size: cover; background-position: center; ">
+
+  <header class="container-fluid py-3 bg-transparent" style="border-bottom: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(50px); ">
+   <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+     <img alt="YGPT logo" class="me-2" height="40" src="https://storage.googleapis.com/a1aa/image/QsdR2ut7JPLNiIuo08tC-zvP88SyBCcKfxnJi7xbln4.jpg" width="40"/>
+     <span class="fs-4 fw-bold">
+      GPT
+     </span>
+    </div>
+    <nav class="d-none d-md-flex gap-3">
+     <a class="text-white" href="#">
+      Modules
+     </a>
+     <a class="text-white" href="#">
+      Token
+     </a>
+     <a class="text-white" href="#">
+      FAQs
+     </a>
+     <a class="text-white" href="#">
+      Roadmap
+     </a>
+     <a class="text-white" href="#">
+      Privacy
+     </a>
+    </nav>
+    <button class="btn btn-pink">
+     Buy YGPT
+    </button>
+   </div>
+  </header>
+
+  <main class="container text-center my-5 d-flex justify-content-center align-items-center  flex-column" style="min-height: 82vh;">
+   <h1 class="display-4 fw-bold mb-4" style="opacity: 0.9; width: 75%;">
+    The Future of Blockchain Interaction YGPT
+   </h1>
+   <p class="lead mb-5 fs-6" style="opacity: 0.5; width: 50%;">
+    Revolutionizing the way we interact with blockchain, providing an intuitive conversational interface for all your blockchain-related tasks
+   </p>
+
+   <div class=" p-4 rounded-4" style="border: 1px solid rgba(255, 255, 255, 0.2); background-color: rgba(255, 255, 255, 0.075); width: 80%; min-height: 55%;">
+    
+    <div class="d-flex align-items-center mb-3">
+     <img alt="Ask AI logo" class="me-2" height="40" src="https://storage.googleapis.com/a1aa/image/y4Ir5DkLO-PngUpgUUMKOHgnjXhw65FLy8nzKwu48Zw.jpg" width="40"/>
+     <span class="fs-5 fw-semibold">
+      Ask AI
+     </span>
+    </div>
+
+    <div class=" bg-transparent p-2 rounded-3"  >
+     <p class="fs-5 fw-semibold mb-2">
+      Ask 'Y' with your prompt.
+     </p>
+     <p class="small mb-4">
+      AI Powered Conversational User Interface for Cryptocurrency
+     </p>
+     <div class="d-flex flex-wrap gap-2 mb-4">
+      <button class="btn btn-secondary">
+       🖼️ Create image
+      </button>
+      <button class="btn btn-secondary">
+       📝 Summarize text
+      </button>
+      <button class="btn btn-secondary">
+       🗂️ Make a plan
+      </button>
+      <button class="btn btn-secondary">
+       💻 Code
+      </button>
+      <button class="btn btn-secondary">
+       🗣️ More
+      </button>
+     </div>
+
+     <div class="input-group">
+      <input class="form-control input-transparent border-0 rounded-start" placeholder="/suggest..." type="text" style="background-color: rgba(0, 0, 0, 0.651);" />
+      <button >
+       Send
+      </button>
+     </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-container">
+            <input  type="text" id="user-input" placeholder="Apna career likho..." style="background-color: rgba(0, 0, 0, 0.651);" />
+            <button class="btn btn-pink rounded-end" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+   </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+ </body>
+</html>
